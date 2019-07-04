@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features={"src/main/resources/case4.feature"},       
 		glue="stepdefinition",
-		plugin="html:target/htmlreport")
+		 plugin="json:target/cucumber.json")
+		//plugin="html:target/htmlreport")
        //tags={"@yellow"})
 				//tags={"@yellow","@blue"})
 				//tags={"~@yellow"})
